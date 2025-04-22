@@ -1,39 +1,60 @@
-# Run `brew tap homebrew/bundle` before using `bundle`
-
+brew "act"
+brew "agg"
 brew "ansible"
+brew "asciinema"
+brew "awscli"
 brew "bat"
-brew "k9s"
-brew "fzf"
+brew "derailed/k9s/k9s"
 brew "dive"
+brew "doctl"
+brew "exiftool"
 brew "ffmpeg"
-brew "flyctl"
+brew "fzf"
 brew "gh"
 brew "git"
 brew "git-delta"
 brew "git-sizer"
 brew "go"
+brew "gradle"
 brew "helm"
-brew "hurl"
 brew "htop"
 brew "jq"
 brew "kubectl"
 brew "kubectx"
-brew "kind"
+brew "kubeshark"
 brew "mas"
 brew "minikube"
 brew "neovim"
+brew "npm"
+brew "nvm"
+brew "openjdk@17"
 brew "poetry"
-
-tap "homebrew/services"
 brew "syncthing", restart_service: true
+brew "telnet"
 brew "terraform"
 brew "tldr"
 brew "tmux"
-brew "tree"
+brew "trivy"
+brew "virtualenv"
 brew "watch"
-brew "wget"
-brew "p7zip"
-brew "smartmontools"
+# Pulumi
+tap "pulumi/tap"
+brew "pulumi/tap/pulumi"
+# Pulumi end
+
+# Garden CLI Start
+tap "garden-io/garden"
+brew "garden-cli"
+# Garden CLI End
+
+# Brew dependencies
+brew "python-setuptools"
+brew "glib"
+brew "sqlite"
+brew "c-ares"
+brew "openjdk"
+brew "luajit"
+brew "jpeg-turbo"
 
 cask "1password"
 cask "1password-cli"
@@ -48,30 +69,27 @@ cask "espanso"
 cask "firefox"
 cask "font-monaspace"
 cask "google-chrome"
-cask "jordanbaird-ice"
+cask "google-cloud-sdk"
+cask "hiddenbar"
+cask "intellij-idea"
 cask "karabiner-elements"
 cask "kitty"
-cask "monodraw"
+cask "linear-linear"
+cask "logitech-camera-settings"
 cask "mullvad-browser"
+cask "notion"
 cask "obs"
 cask "obsidian"
 cask "rectangle"
-cask "shapr3d"
+cask "slack"
 cask "steam"
 cask "tailscale"
+cask "transmit"
 cask "visual-studio-code"
-cask "zoom"
 cask "vlc"
-cask "rustdesk"
-cask "element"
-cask "airflow"
 cask "zed"
-cask "reader"
-cask "mactex"
-cask "minecraft"
-cask "pycharm"
-cask "multipatch"
-cask "logitech-camera-settings"
+cask "zoom"
+
 
 mas "1Password for Safari", id: 1569813296
 mas "Affinity Designer", id: 824171161
@@ -79,10 +97,9 @@ mas "Affinity Photo", id: 824183456
 mas "Affinity Publisher", id: 881418622
 mas "ColorSlurp", id: 1287239339
 mas "Dark Reader for Safari", id: 1438243180
-mas "Kagi for Safari", id: 1622835804
+mas "Dashlane", id: 517914548
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator Pro", id: 1289583905
 mas "reeder 5", id: 1529448980
-mas "Hyperspace: Reclaim Disk Space", id: 6739505345
